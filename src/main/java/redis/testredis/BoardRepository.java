@@ -14,7 +14,7 @@ public class BoardRepository {
         dbCount++;
         ArrayList<Board> boards = new ArrayList<Board>();
         int count = Integer.parseInt(size);
-        //Thread.sleep(5000);
+        Thread.sleep(5000);
 
         for (int i = 0; i < count; i++) {
             boards.add(new Board(i + 0L, i + "번째 게시물", i + "번째 내용"));
